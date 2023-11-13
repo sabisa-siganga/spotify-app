@@ -1,34 +1,44 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Spotify App with Next.js
+
+## Overview
+
+This dynamic website is created using data retrieved from the Spotify API. To fetch tracks from the Spotify API, you need a token for authorization purposes.
+
+### Authorization Token
+
+1. **Login or Sign Up on Spotify:** If you already have an account, log in. If not, sign up for a Spotify account.
+
+2. **Create an App on the Spotify Developer Dashboard:**
+
+   - After logging in, go to the [Spotify Developer Dashboard](https://developer.spotify.com/dashboard/).
+   - Create a new app to obtain a Client ID and Secret.
+
+3. **Generate Authorization Token:**
+
+   - Use Postman or any similar tool to make a request using the obtained Client ID and Secret to generate the token.
+   - The token expires in an hour, so you need to make a request to generate a new token every hour.
+
+4. **Use Token in the Application:**
+   - After getting the token, copy it from Postman or the tool you used to make the request.
+   - Paste the token in the `token` variable in the `token.ts` file located in the `app` folder of my application.
 
 ## Getting Started
 
-First, run the development server:
+1. **Clone the Project:**
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+   ```bash
+   git clone https://github.com/sabisa-siganga/spotify-app
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+   ```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+2. **Change Directory:**
+   cd spotify-app
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+3. **Run the App:**
+   npm run dev
 
-## Learn More
+The app will start on http://localhost:3000. Open your browser and navigate to this address to view the Spotify App.
 
-To learn more about Next.js, take a look at the following resources:
+Make sure to handle token generation in the application code.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Feel free to explore and customize the project according to your needs!
