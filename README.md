@@ -8,10 +8,13 @@ This dynamic website is created using data retrieved from the Spotify API. To fe
 
 1. **Login or Sign Up on Spotify:** If you already have an account, log in. If not, sign up for a Spotify account.
 
-2. **Create an App on the Spotify Developer Dashboard:**
+2. **Create an Account on the Spotify Developer Dashboard:**
 
-   - After logging in, go to the [Spotify Developer Dashboard](https://developer.spotify.com/dashboard/).
-   - Create a new app to obtain a Client ID and Secret.
+   - Browse to [https://developer.spotify.com/dashboard/applications](https://developer.spotify.com/dashboard/applications).
+   - Log in with your Spotify account.
+   - Click on ‘Create an app’.
+   - Pick an ‘App name’ and ‘App description’ of your choice and mark the checkboxes.
+   - After creation, you will see your ‘Client Id’, and click on ‘Show client secret’ to unhide your ‘Client secret’.
 
 3. **Generate Authorization Token:**
 
@@ -40,5 +43,3 @@ This dynamic website is created using data retrieved from the Spotify API. To fe
 The app will start on http://localhost:3000. Open your browser and navigate to this address to view the Spotify App.
 
 Make sure to handle token generation in the application code.
-
-Feel free to explore and customize the project according to your needs!
